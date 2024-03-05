@@ -7,9 +7,16 @@ export default function SplashScreen({navigation}) {
       style={{flex: 1, justifyContent: 'center', backgroundColor: 'seagreen'}}>
       <Text>SplashScreen</Text>
       <Button
-        title="Go To Signin"
+        title="Go To SignIn"
         onPress={() =>
           navigation.navigate('SignInScreen', {name: 'SignInScreen'})
+        }
+      />
+      <Text>SplashScreen</Text>
+      <Button
+        title="Go To SignUp"
+        onPress={() =>
+          navigation.navigate('SignUpScreen', {name: 'SignUpScreen'})
         }
       />
     </View>
